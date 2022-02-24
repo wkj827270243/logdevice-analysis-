@@ -5,7 +5,10 @@
  copyset 
  sticky copysets
  nodeset 
+ metadata
+   include epoch and replication configuration
  metadata log
+   store in logdevice
  Epoch store
     The epoch store is a consistent metadata store that provides 2 functions:
       Provide monotonically increasing epoch numbers. During sequencer activation, the epoch store provides epoch numbers through read-modify-write transactions. The sequencer retrieves the current number and bumps the number.
