@@ -1,3 +1,12 @@
  term:
- 1，non-deterministic decentralized record placement 
- 2，sequencer object 
+ non-deterministic decentralized record placement 
+ sequencer object 
+ sequence number
+ copyset 
+ sticky copysets
+ nodeset 
+ metadata log
+ Epoch store
+    The epoch store is a consistent metadata store that provides 2 functions:
+      Provide monotonically increasing epoch numbers. During sequencer activation, the epoch store provides epoch numbers through read-modify-write transactions. The sequencer retrieves the current number and bumps the number.
+      Store the current replication configuration for each log. It also stores the last clean (fully recovered) epoch (LCE) of the log.
