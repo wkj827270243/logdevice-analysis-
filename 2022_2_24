@@ -16,5 +16,8 @@ term:
       Store the current replication configuration for each log. It also stores the last clean (fully recovered) epoch (LCE) of the log.
  single-copy delivery
  copyset index
- many-to-many rebuilding protocol
- event log
+ many-to-many rebuilding protocol 
+ trimming
+ Internal logs
+  Logs configuration
+  Event log
