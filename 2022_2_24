@@ -4,6 +4,7 @@ term:
  log sequence number
   LSN 
  copyset 
+  The copyset for each record is included in the header along with the log id, LSN, and timestamp when the record is written.
  sticky copysets
  nodeset 
  metadata
