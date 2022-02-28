@@ -5,6 +5,9 @@ term:
   LSN 
  copyset 
   The copyset for each record is included in the header along with the log id, LSN, and timestamp when the record is written.
+  The storage nodes leverage the copyset index to efficiently filter each record.
+ Copyset index
+  As another optimization, each storage node maintains a copyset index that contains the LSN of each record stored on the node and its copyset. The index is updated as new records arrive and old records are trimmed.
  sticky copysets
  nodeset 
  metadata
